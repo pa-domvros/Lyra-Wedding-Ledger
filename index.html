@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lyra and the Blessed Wedding Ledger</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--
+    THIS IS THE WEDDING LEDGER VERSION (UK spelling)
+    Theme: Archaeologist Lyra races rivals to recover the Blessed Wedding Ledger
+    Last updated: 2025-08-24
+  -->
+  <style>
+    #splash-screen { background: url('splash.png') center/cover no-repeat; }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <!-- Splash -->
+    <section id="splash-screen" class="screen active">
+      <div class="splash-content">
+        <h1>Lyra and the Blessed Wedding Ledger</h1>
+        <p>An archaeology adventure to help friends <em>organise</em> the perfect ceremony.</p>
+        <button id="start-button">Begin the Expedition</button>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section id="intro-screen" class="screen">
+      <div class="story-content">
+        <h2>The Legend Awakes</h2>
+        <p>Somewhere beneath the dunes lies the <strong>Blessed Wedding Ledger</strong>—a text said to sanctify any celebration.
+        As <strong>Lyra</strong>, an archaeologist, you’ll complete five trials to unlock its guidance and help your friends
+        organise the perfect ceremony. Four rival treasure-hunters are racing you to it.</p>
+        <button id="show-characters-button">Meet the Expedition Teams</button>
+      </div>
+    </section>
+
+    <!-- Character Intros -->
+    <section id="character-intro-screen" class="screen">
+      <div class="character-intro-content">
+        <img id="character-intro-portrait" src="" alt="Character Portrait" />
+        <div class="character-intro-info">
+          <h2 id="character-intro-name"></h2>
+          <p id="character-intro-description"></p>
+          <button id="next-character-button">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game -->
+    <section id="game-screen" class="screen">
+      <div id="top-bar">
+        <div id="level-title"></div>
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div id="score"></div>
+      </div>
+      <div id="main-content">
+        <div id="character-panel">
+          <img src="lyra_portrait.png" alt="Lyra" id="character-image" />
+          <p id="character-dialogue"></p>
+        </div>
+        <div id="puzzle-panel">
+          <div id="sentence-container"><p id="sentence-text"></p></div>
+          <div id="choices-container">
+            <button class="choice-button"></button>
+            <button class="choice-button"></button>
+            <button class="choice-button"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="map-screen" class="screen">
+      <div class="map-content">
+        <h2>The Race for the Wedding Ledger</h2>
+        <p id="map-status-text"></p>
+        <ul id="team-progress-list"></ul>
+        <button id="proceed-button">Continue</button>
+      </div>
+    </section>
+
+    <!-- Game Over -->
+    <section id="game-over-screen" class="screen">
+      <div class="game-over-content">
+        <h2 id="game-over-title">The Race is Lost</h2>
+        <img id="winner-portrait" src="" alt="Winner Portrait" />
+        <p id="game-over-text"></p>
+        <button id="restart-button">Try Again</button>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    ✨ Lyra & the Blessed Wedding Ledger — UK spelling — Archaeology + Wedding theme ✨
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
